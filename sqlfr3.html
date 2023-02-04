@@ -1,0 +1,87 @@
+<html>
+<head>
+    <script>function validateform(){  
+        var name=document.myform.uname.value;  
+        var aadhar=document.myform.aadhar.value;
+          
+        if (name==null || name==""){  
+          alert("Name can't be blank");  
+          return false;   
+          }else if(aadhar.length<16){
+              alert("Aadhar Number number must be 16 digits.");
+              return false;
+          }  
+        }  
+        </script>
+    <style>
+        
+        .mydiv{
+            background-color:transparent;
+            width:420px;
+            height:390px;
+            margin-left: 550px;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body TEXT="black" background="jdu2.jpg" height="100%" width="100%">
+<center><h1>FORM FILLING</h1></center>
+<marquee><h2>FILL THE FORM CAREFULLY</h2></marquee>
+<div class="mydiv">
+    <form name="myform" method="post" action="IWTproject.html" onsubmit="return validateform()" > 
+    <fieldset>
+        <legend>Voting Form</legend>
+    <table>
+        <tr>
+            <td>
+                <label for="uname">Voter Name</label>
+            </td>
+            <td>
+                <input type="text" id="uname" name="username">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Number">Aadhar Number</label>
+            </td>
+            <td>
+                <required><input type="number" id="aadhar" name="Voter ID"></required>
+                <button type="button">Check</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="age">Age</label>
+            </td>
+            <td>
+                <input type="text" name="userage" id="age" size="2" maxlength="2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Vote</label>
+            </td>
+            <td>
+                <input type="text" value="JDU" name="country" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Party ID</label>
+            </td>
+            <td>
+                <input type="text" value="003" name="country" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>

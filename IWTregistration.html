@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <script>function validateform(){  
+            var name=document.myform.uname.value;  
+            var password=document.myform.pass.value; 
+            var email=document.myform.uemail.value; 
+            var Mobile=document.myform.tel.value;
+              
+            if (name==null || name==""){  
+              alert("Name can't be blank");  
+              return false;  
+            }else if(password.length<6){  
+              alert("Password must be at least 6 characters long.");  
+              return false;  
+              }else if(mobile No.length<10){
+                  alert("Mobile number must be 10 digits.");
+                  return false;
+              }  
+            }  
+            </script>
+        <style>
+            
+            .mydiv{
+                background-color:transparent;
+                width:420px;
+                height:390px;
+                margin-left: 550px;
+                padding: 7px;
+            }
+            .mydiv1{
+                background-image: url("formsimg.jpg");
+                height: auto;
+                width: auto;
+            }
+        </style>
+          
+    </head>
+<body TEXT="white" background="formsimg2.jpg">
+<center><h1>REGISTRATION PAGE</h1></center>
+<marquee><h2>FILL THE FORM CAREFULLY</h2></marquee>
+<div class="mydiv">
+    <form action="/IWTlogin.html">
+        
+    <fieldset>
+        <legend>Registration Form</legend>
+    <table>
+        <tr>
+            <td>
+                <label for="uname">Name</label>
+            </td>
+            <td>
+                <input type="text" id="uname" name="username" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="uemail">Email</label>
+            </td>
+            <td>
+                <input type="text" id="uemail" name="usermail" required>
+                <button type="button">Check</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="tel">Mobile No</label>
+                </td>
+                <td>
+                <input type="number" id="tel" name="tel" required> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="age">Age</label>
+            </td>
+            <td>
+                <input type="text" name="userage" id="age" size="2" maxlength="2" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Country</label>
+            </td>
+            <td>
+                <input type="text" value="India" name="country" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    <label for="pass">Password</label>
+            </td>
+            <td>
+                    <input type="password" id="pass" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Aadhar">Upload Aadhar</label>
+            </td>
+            <td>
+                <input type="file" id="aadhar" required>
+            </td>
+        </tr>
+       
+        <tr>
+            <td>
+                <label>Gender</label>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" value="f" name="gender"> Female</label>
+                    <label>
+                    <input value="m" type="radio" name="gender"> Male</label>
+                    <label>
+                        <input value="o" type="radio" name="gender"> Others</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    <label for="city">City</label>
+            </td>
+            <td>
+                    <select id="city" name="city">
+                        <option disabled selected>--Choose City--</option>
+                            
+                                <option>New Delhi</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Arunachal Pradesh</option>
+                                 <option>Assam</option>	
+                                <option>Bihar</option>	
+                                <option>Chhattisgarh</option>	
+                                <option>Goa</option>	
+    	                        <option>Gujarat</option>
+                                <option>Haryana	</option>
+	                            <option>Himachal Pradesh</option>
+                                <option>Jammu and Kashmir</option>
+                                <option>Jharkhand   </option>
+                                <option>Karnataka  </option>
+                                <option>Kerala	      </option>
+	                            <option>Madhya Pradesh</option>
+	                            <option>Maharashtra</option>
+                                <option>Manipur	</option>
+	                            <option>Meghalaya</option>
+	                            <option>Mizoram</option>
+	                            <option>Nagaland</option>
+	                            <option>Odisha</option>
+	                            <option>Punjab</option>
+	                            <option>Rajasthan</option>
+	                            <option>Sikkim</option>
+                                <option>Tamil Nadu	</option>
+	                            <option>Telangana	</option>
+                                <option>Tripura	</option>
+	                            <option>Uttar Pradesh</option>
+                                <option>Uttarakhand</option>
+                                <option>West Bengal </option>
+
+                    </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Address</label>
+            </td>
+            <td>
+                <textarea rows="4" cols="40"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Submit</button>
+                <input type="reset">
+            </td>
+        </tr>
+    </table>
+    </fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>
